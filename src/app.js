@@ -67,8 +67,6 @@ app.get('/weather', (req, res) => {
     });
 })
 
-
-
 app.get('/products', (req, res) => {
     if (!req.query.search) {
         return res.send({
@@ -96,8 +94,6 @@ app.get('*', (req, res) => {
         errorMessage: 'Page not found'
     });
 })
-
-
 
 // Start the server up
 app.listen(3000, () => {
